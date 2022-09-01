@@ -1,4 +1,4 @@
-# spellduel
+# SpellDuel
 A text-based magical dueling game written in Java. Last updated in 2019, uploaded in 2022 for archival purposes. 
 
 SpellDuel is a text-mode turn-based dueling/battle arena with a variety of features and combat systems, including:
