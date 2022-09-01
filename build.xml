@@ -1,0 +1,16 @@
+
+<project default="SpellDuel">
+	<target name="SpellDuel">
+		
+		<javac srcdir="src" destdir="bin" includeantruntime="false"/>
+	</target>
+
+	<target name="jar">
+		<mkdir dir="build"/>
+		<jar destfile="build/SpellDuel.jar" basedir="bin">
+			<manifest>
+				<attribute name="Main-Class" value="SpellDuel.run"/>
+			</manifest>
+		</jar>
+	</target>
+</project>

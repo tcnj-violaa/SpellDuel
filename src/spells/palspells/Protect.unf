@@ -1,0 +1,29 @@
+//Figure out how to implement per-turn effects!
+package SpellDuel.spells.palspells;
+import SpellDuel.spells.*;
+import SpellDuel.entities.*;
+import SpellDuel.*;
+public class Protect extends Spell{
+	private double protectfactor=0.05;
+	public Protect(){
+		name="Protect";
+		manacost=200;
+	}
+
+	@Override
+	public void cast(Entity caster, Entity target){
+		actualmc=calculateActualMC(caster);
+		double origi
+
+		target.setAFactor(target.getAFactor()-protectfactor);
+
+		caster.drainMana(actualmc);
+		System.out.println("\n"+getDialog(caster,target)+"\n");
+	}
+
+	@Override
+	public String getDialog(Entity caster, Entity target){
+		String mana=manaToBlue();
+		String cst=nameToBold(caster);
+		String tgt=nameToBold(target);
+		int armoradd //Unfinished
